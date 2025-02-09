@@ -28,4 +28,32 @@ body {
   margin: 0px auto;
   padding: 0px 15px;
   outline: 1px solid red;
+}
+
+.About {
+  padding-top: 164px;
+  padding-bottom: 164px;
+}
+.About__img {
+  height: 632px;
+  border-radius: 40px;
+}
+.About__img:nth-child(2) {
+  height: 428px;
+}
+.About__img:last-child {
+  height: 352px;
+}
+.About__btn {
+  border-radius: 60px;
+  padding: 14px 28px;
+  border: none;
+  background: #F6F5EF;
+  color: #11131F;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.81px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+.About {
+padding-top: 164px;
+padding-bottom: 164px;
+
+&__list {
+}
+
+&__item {
+}
+
+&__img {
+height: 632px;
+border-radius: 40px;
+
+// @media screen and (min-width: 704px){
+//     height: 632px;
+// }
+
+// @media screen and (min-width: 335px){
+//     height: 335px;
+// }
+
+&:nth-child(2) {
+height: 428px;
+
+// @media screen and (min-width: 704px){
+//     height: 389px;
+// }
+// @media screen and (min-width: 335px){
+//     height: 335px;
+// }
+
+}
+
+&:last-child {
+height: 352px;
+
+// @media screen and (min-width: 704px){
+//     height: 352px;
+// }
+
+// @media screen and (min-width: 335px){
+//     height: 335px;
+// }
+
+}
+}
+
+&__btn {
+    border-radius: 60px;
+    padding: 14px 28px;
+    border: none;
+    background: #F6F5EF;
+    color: #11131F;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1; 
+    letter-spacing: -0.81px;
+    text-align: center;
+}
+
+
+}
