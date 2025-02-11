@@ -12,18 +12,52 @@
         padding-bottom: 64px;
     }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
     &__info {
+display: flex;
+flex-direction: column;
+gap: 24px;
+
+@media screen and (min-width: 728px){
+}
+
+@media screen and (min-width: 1246px){
+   flex-direction: row;
+   justify-content: space-between;
+}
 
 
-        &__item {}
+
+        &__item {
+
+            @media screen and (min-width: 728px){
+                &:last-child {  
+                    margin-left: auto;
+                } 
+            }
+           
+            @media screen and (min-width: 1246px){
+                &:last-child {  
+                    margin-left: 0px;
+                 
+                } 
+            }
+         
+           
+        }
 
         &__title {
             width: 100%;
-            font-family: "DM Sans";
             font-size: 24px;
             font-weight: 500;
             line-height: 1.2;
             letter-spacing: -1.08px;
+            color: $logo-color;
 
             @media screen and (min-width: 728px) {
                 width: 497px;
@@ -31,16 +65,21 @@
                 letter-spacing: -1.44px;
             }
 
-            @media screen and (min-width: 1246px) {}
+            @media screen and (min-width: 1246px) {
+
+            }
         }
 
         &__span {
-            color: $logo-color;
-            font-family: "DM Sans";
             font-size: 24px;
+            font-style: italic;
             font-weight: 500;
             line-height: 1.2;
             letter-spacing: -1.08px;
+            background: linear-gradient(92deg, $italic-color 41.03%, $bcg-gray-color 90.31%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
             @media screen and (min-width: 728px) {
                 font-size: 32px;
@@ -58,49 +97,51 @@
             font-weight: 400;
             line-height: 1.4;
             letter-spacing: -0.28px;
+        
+
+            
+            
 
             @media screen and (min-width: 728px) {
                 width: 273px;
                 font-size: 16px;
                 letter-spacing: -0.32px;
             }
+            @media screen and (min-width: 1246px) {
 
-            @media screen and (min-width: 1246px) {}
+            }
         }
     }
 
     &__list {
         display: flex;
-        gap: 0px;
-
-        @media screen and (min-width: 728px) {
-            gap: 16px;
-        }
-
-        @media screen and (min-width: 1246px) {
-            gap: 32px;
-        }
+        justify-content: space-between;
+        
     }
 
     &__item {
         border-radius: 24px;
         background: #1F212D;
-        padding: 24px;
+        padding: 24px 16px;
         text-align: center;
+        display: none;
 
-        .team__list > &:not(:first-child) {
-            display: none;
+        &:first-child {
+            display: inline;
         }
 
         @media screen and (min-width: 728px) {
-            .team__list > &:not(:nth-child(-n+2)) {
+            padding: 24px 12px;
+
+            &:nth-child(2) {
                 display: inline;
             }
         }
 
-
         @media screen and (min-width: 1246px) {
-            .team__list > &:not(:nth-child(-n+3)) {
+            padding: 32px;
+
+            &:nth-child(3) {
                 display: inline;
             }
         }
@@ -119,6 +160,12 @@
         line-height: 1.1;
         letter-spacing: -0.72px;
         margin: 18px 0px 8px 0px;
+
+        @media screen and (min-width: 728px) {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.81px;
+        }
     }
 
     &__text {
@@ -129,6 +176,12 @@
         letter-spacing: -0.24px;
         width: 100%;
 
+        @media screen and (min-width: 728px) {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: -0.32px;
+            width: 320px;
+        }
 
     }
 
