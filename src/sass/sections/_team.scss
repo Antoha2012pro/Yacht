@@ -1,0 +1,136 @@
+.team {
+    padding-top: 80px;
+    padding-bottom: 43px;
+
+    @media screen and (min-width: 728px) {
+        padding-top: 100px;
+        padding-bottom: 45px;
+    }
+
+    @media screen and (min-width: 1246px) {
+        padding-top: 164px;
+        padding-bottom: 64px;
+    }
+
+    &__info {
+
+
+        &__item {}
+
+        &__title {
+            width: 100%;
+            font-family: "DM Sans";
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -1.08px;
+
+            @media screen and (min-width: 728px) {
+                width: 497px;
+                font-size: 32px;
+                letter-spacing: -1.44px;
+            }
+
+            @media screen and (min-width: 1246px) {}
+        }
+
+        &__span {
+            color: $logo-color;
+            font-family: "DM Sans";
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -1.08px;
+
+            @media screen and (min-width: 728px) {
+                font-size: 32px;
+                letter-spacing: -1.44px;
+            }
+
+            @media screen and (min-width: 1246px) {}
+        }
+
+        &__subtitle {
+            width: 100%;
+            color: $logo-color;
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -0.28px;
+
+            @media screen and (min-width: 728px) {
+                width: 273px;
+                font-size: 16px;
+                letter-spacing: -0.32px;
+            }
+
+            @media screen and (min-width: 1246px) {}
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 0px;
+
+        @media screen and (min-width: 728px) {
+            gap: 16px;
+        }
+
+        @media screen and (min-width: 1246px) {
+            gap: 32px;
+        }
+    }
+
+    &__item {
+        border-radius: 24px;
+        background: #1F212D;
+        padding: 24px;
+        text-align: center;
+
+        .team__list > &:not(:first-child) {
+            display: none;
+        }
+
+        @media screen and (min-width: 728px) {
+            .team__list > &:not(:nth-child(-n+2)) {
+                display: inline;
+            }
+        }
+
+
+        @media screen and (min-width: 1246px) {
+            .team__list > &:not(:nth-child(-n+3)) {
+                display: inline;
+            }
+        }
+    }
+
+
+    &__img {
+        width: 48px;
+        margin: 0px auto;
+    }
+
+    &__title {
+        color: #F6F5EF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -0.72px;
+        margin: 18px 0px 8px 0px;
+    }
+
+    &__text {
+        color: rgba(246, 245, 239, 0.50);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: -0.24px;
+        width: 100%;
+
+
+    }
+
+
+}
