@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h5, h6, p {
 
 body {
   font-family: "DM Sans", serif;
-  background-color: #A1B5BA;
+  background-color: #11131F;
 }
 
 .container {
@@ -58,8 +58,17 @@ body {
 }
 
 .hero {
-  background-color: #11131F;
   padding: 40px 0px 80px 0px;
+}
+@media screen and (min-width: 728px) {
+  .hero {
+    padding: 64px 0px 100px 0px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero {
+    padding: 64px 0px 164 px 0px;
+  }
 }
 .hero__items {
   display: flex;
@@ -75,9 +84,13 @@ body {
 .hero__item {
   position: relative;
 }
+.hero__items > .hero__item:nth-child(1) {
+  padding: 0px 0px 0px 0px;
+}
 @media screen and (min-width: 1246px) {
   .hero__items > .hero__item:nth-child(1) {
     order: 2;
+    padding: 68px 0px 0px 0px;
   }
 }
 .hero__title {
@@ -117,6 +130,7 @@ body {
   }
 }
 .hero__text {
+  width: 100%;
   color: #F6F5EF;
   font-size: 14px;
   font-weight: 400;
@@ -129,15 +143,12 @@ body {
     width: 539px;
     font-size: 16px;
     letter-spacing: -0.32px;
-  }
-}
-@media screen and (min-width: 1246px) {
-  .hero__text {
-    margin: 14px 0px 32px 0px;
+    margin: 16px 0px 32px 0px;
   }
 }
 .hero__items-btn {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 .hero__button {
@@ -151,13 +162,28 @@ body {
   font-weight: 700;
   line-height: 110%;
   letter-spacing: -0.63px;
+  transition: 250ms ease-in-out;
 }
-.hero__items-btn > .hero__item-btn:last-child > .hero__button {
+@media screen and (min-width: 728px) {
+  .hero__button {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
+}
+.hero__button:hover, .hero__button:focus {
+  color: #93ABAE;
+  background-color: #F6F5EF;
+}
+.hero__items-btn > .hero__item-btn:nth-child(2) > .hero__button {
   outline: 1px solid #F6F5EF;
   background: transparent;
+  transition: 250ms ease-in-out;
+}
+.hero__items-btn > .hero__item-btn:nth-child(2) > .hero__button:hover, .hero__items-btn > .hero__item-btn:nth-child(2) > .hero__button:focus {
+  background-color: #F6F5EF;
 }
 .hero__items > .hero__item:nth-child(2) {
-  padding: 24px 24px 24px 24px;
+  padding: 24px 24px 28px 24px;
   background-color: #A1B5BA;
   border-radius: 25px;
   border-bottom-right-radius: 0px;
@@ -166,13 +192,26 @@ body {
 }
 @media screen and (min-width: 728px) {
   .hero__items > .hero__item:nth-child(2) {
+    padding: 32px 32px 38px 32px;
     width: 426px;
+    margin: 0px 0px 25.7px 0px;
   }
 }
 @media screen and (min-width: 1246px) {
   .hero__items > .hero__item:nth-child(2) {
     order: 1;
   }
+}
+.hero__items > .hero__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: -4.57%;
+  right: 0;
+  width: 65%;
+  height: 4.57%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #A1B5BA;
 }
 .hero__clients {
   display: flex;
@@ -182,26 +221,37 @@ body {
   z-index: 9;
 }
 .hero__clients > .hero__client:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  left: 41px;
   z-index: 8;
 }
 .hero__clients > .hero__client:nth-child(3) {
+  position: absolute;
+  top: 0px;
+  left: 85px;
   z-index: 7;
 }
 .hero__icon-client {
   width: 48px;
-  height: 48px;
   border-radius: 48px;
   outline: 2px solid #93ABAE;
+}
+@media screen and (min-width: 728px) {
+  .hero__icon-client {
+    width: 56px;
+    border-radius: 56px;
+  }
 }
 .hero__clients > .hero__client:nth-child(2) > .hero__icon-client {
   position: absolute;
   top: 0px;
-  left: 41px;
+  left: 60px;
 }
 .hero__clients > .hero__client:nth-child(3) > .hero__icon-client {
   position: absolute;
   top: 0px;
-  left: 83px;
+  left: 60px;
 }
 .hero__client-text {
   color: #11131F;
@@ -210,17 +260,31 @@ body {
   line-height: 110%;
   letter-spacing: 0.56px;
   text-transform: uppercase;
-  margin-top: 13px;
   margin: 13px 0px 0px 0px;
 }
+@media screen and (min-width: 728px) {
+  .hero__client-text {
+    margin: 11px 0px 0px 0px;
+  }
+}
 .hero__img {
-  width: 100px;
+  width: 100%;
   margin: 52px 0px 14px 0px;
+}
+@media screen and (min-width: 728px) {
+  .hero__img {
+    margin: 111px 0px 22px 0px;
+  }
 }
 .hero__price {
   display: flex;
   gap: 14px;
   align-items: center;
+}
+@media screen and (max-width: 200px) {
+  .hero__price {
+    flex-wrap: wrap;
+  }
 }
 .hero__price-title {
   color: #11131F;
@@ -237,6 +301,7 @@ body {
   }
 }
 .hero__price-text {
+  width: 100%;
   color: #11131F;
   font-size: 14px;
   font-weight: 400;
@@ -258,15 +323,16 @@ body {
   top: 35px;
   right: -12px;
 }
-.hero__bcg {
-  position: absolute;
-  bottom: -19px;
-  right: 0;
-  width: 200px;
-  height: 19px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #A1B5BA;
+@media screen and (min-width: 728px) {
+  .hero__img-man {
+    width: 233px;
+    right: -146px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .hero__img-man {
+    right: -112px;
+  }
 }
 
 .About {
