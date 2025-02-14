@@ -335,32 +335,108 @@ body {
   }
 }
 
-.About {
-  padding-top: 164px;
-  padding-bottom: 164px;
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.About__img {
-  height: 632px;
+@media screen and (min-width: 728px) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .about {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
+}
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 728px) {
+  .about__list {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .about__list {
+    gap: 64px;
+    flex-direction: row;
+  }
+}
+.about__item {
+  position: relative;
+}
+@media screen and (min-width: 728px) {
+  .about__list > .about__item:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .about__list > .about__item:nth-child(3) {
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .about__list > .about__item:nth-child(3) {
+    margin-left: 340px;
+  }
+}
+.about__img {
   border-radius: 40px;
+  width: 100%;
 }
-.About__img:nth-child(2) {
-  height: 428px;
+@media screen and (min-width: 728px) {
+  .about__img {
+    width: 704px;
+  }
+  .about__list > .about__item:nth-child(2) > .about__img {
+    width: 400px;
+  }
+  .about__list > .about__item:nth-child(3) > .about__img {
+    width: 380px;
+  }
 }
-.About__img:last-child {
-  height: 352px;
+@media screen and (min-width: 1246px) {
+  .about__img {
+    width: 712px;
+  }
+  .about__list > .about__item:nth-child(2) > .about__img {
+    width: 440px;
+    height: 428px;
+    margin-top: auto;
+  }
+  .about__list > .about__item:nth-child(3) > .about__img {
+    width: 436px;
+  }
 }
-.About__btn {
+.about__btn {
   border-radius: 60px;
   padding: 14px 28px;
-  border: none;
   background: #F6F5EF;
   color: #11131F;
-  font-family: "DM Sans";
   font-size: 18px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.81px;
-  text-align: center;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+@media screen and (min-width: 728px) {
+  .about__list > .about__item:nth-child(2) > .about__btn {
+    right: 255px;
+    left: auto;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .about__list > .about__item:nth-child(2) > .about__btn {
+    left: 32px;
+    right: auto;
+  }
 }
 
 .team {
