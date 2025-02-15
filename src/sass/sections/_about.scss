@@ -54,6 +54,10 @@
 
     }
 
+    &__list > .about__item:nth-child(2) > picture {
+        margin-top: auto;
+    }
+
     &__img {
         border-radius: 40px;
         width: 100%;
@@ -61,11 +65,11 @@
         @media screen and (min-width: 728px) {
             width: 704px;
 
-            .about__list>.about__item:nth-child(2)>& {
+            .about__list>.about__item:nth-child(2)>picture>& {
                 width: 400px;
             }
 
-            .about__list>.about__item:nth-child(3)>& {
+            .about__list>.about__item:nth-child(3)>picture>& {
                 width: 380px;
             }
 
@@ -74,13 +78,13 @@
         @media screen and (min-width: 1246px) {
             width: 712px;
 
-            .about__list>.about__item:nth-child(2)>& {
+            .about__list>.about__item:nth-child(2)>picture>& {
                 width: 440px;
                 height: 428px;
-                margin-top: auto;
+            }t__list>.about__item:nth-child(2)>picture {
             }
 
-            .about__list>.about__item:nth-child(3)>& {
+            .about__list>.about__item:nth-child(3)>picture>& {
                 width: 436px;
             }
 
@@ -91,8 +95,8 @@
     &__btn {
         border-radius: 60px;
         padding: 14px 28px;
-        background: #F6F5EF;
-        color: #11131F;
+        background: $logo-color;
+        color: $black-color;
         font-size: 18px;
         font-weight: 700;
         line-height: 1.1;
@@ -100,8 +104,7 @@
         position: absolute;
         bottom: 24px;
         left: 24px;
-
-
+        transition: 250ms ease-out;
 
         @media screen and (min-width: 728px) {
             
@@ -122,5 +125,12 @@
             }
 
         }
+
+        &:hover, &:focus {
+            background-color: $bcg-color;
+            color: $logo-color;
+        }
     }
+
+
 }
