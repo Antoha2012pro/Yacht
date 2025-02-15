@@ -385,6 +385,9 @@ body {
     margin-left: 340px;
   }
 }
+.about__list > .about__item:nth-child(2) > picture {
+  margin-top: auto;
+}
 .about__img {
   border-radius: 40px;
   width: 100%;
@@ -393,10 +396,10 @@ body {
   .about__img {
     width: 704px;
   }
-  .about__list > .about__item:nth-child(2) > .about__img {
+  .about__list > .about__item:nth-child(2) > picture > .about__img {
     width: 400px;
   }
-  .about__list > .about__item:nth-child(3) > .about__img {
+  .about__list > .about__item:nth-child(3) > picture > .about__img {
     width: 380px;
   }
 }
@@ -404,12 +407,11 @@ body {
   .about__img {
     width: 712px;
   }
-  .about__list > .about__item:nth-child(2) > .about__img {
+  .about__list > .about__item:nth-child(2) > picture > .about__img {
     width: 440px;
     height: 428px;
-    margin-top: auto;
   }
-  .about__list > .about__item:nth-child(3) > .about__img {
+  .about__list > .about__item:nth-child(3) > picture > .about__img {
     width: 436px;
   }
 }
@@ -425,6 +427,7 @@ body {
   position: absolute;
   bottom: 24px;
   left: 24px;
+  transition: 250ms ease-out;
 }
 @media screen and (min-width: 728px) {
   .about__list > .about__item:nth-child(2) > .about__btn {
@@ -437,6 +440,10 @@ body {
     left: 32px;
     right: auto;
   }
+}
+.about__btn:hover, .about__btn:focus {
+  background-color: #1F212D;
+  color: #F6F5EF;
 }
 
 .team {
