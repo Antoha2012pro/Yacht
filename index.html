@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/Yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yacht/assets/index-bd6e7e87.css">
+    <link rel="stylesheet" href="/Yacht/assets/index-23cf24ba.css">
   </head>
   <body>
     <header class="header">
@@ -519,46 +519,11 @@
           ></textarea>
       </div>
       <button class="rent__button" data-modal-open>
-        Send<svg class="rent__button-icon"><use href=""></use></svg>
+        Send<svg class="rent__button-icon"><use href="/Yacht/assets/symbol-defs-6966dcf5.svg#icon-arrow-left"></use></svg>
       </button>
     </form>
   </div>
 </section>
-<!--Modal-->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal__btn" type="button" data-modal-close>
-      <svg class="modal__icon" width="24" height="24">
-        <use href="/Yacht/assets/symbol-defs-6966dcf5.svg#icon-x"></use>
-      </svg>
-    </button>
-    <picture class="modal__picture">
-      <source
-        srcset="/Yacht/assets/cardyacht-tablet@1x-3031fe0c.webp 1x, /Yacht/assets/cardyacht-tablet@2x-d5fe0e9d.webp 2x"
-        media="(min-width: 1246px)"
-        type="image/png"
-      />
-      <source
-        srcset="/Yacht/assets/cardyacht-tablet@1x-3031fe0c.webp 1x, /Yacht/assets/cardyacht-tablet@2x-d5fe0e9d.webp 2x"
-        media="(min-width: 728px)"
-        type="image/png"
-      />
-      <source
-        srcset="/Yacht/assets/cardyacht-mobile@1x-3271fdf1.webp 1x, /Yacht/assets/cardyacht-mobile@2x-d25a1b22.webp 2x"
-        media="(max-width: 727px)"
-        type="image/png"
-      />
-      <img src="/Yacht/assets/cardyacht-aa133386.png" alt="yacht" class="modal__yacht" />
-    </picture>
-    <h3 class="modal__title">Thank you</h3>
-    <p class="modal__text">
-      Thank you for choosing Yacht Adventures, your booking details have been
-      received and our team will be in touch shortly to confirm your reservation
-      and provide any additional information or assistance you may need.
-    </p>
-  </div>
-</div>
-
     <section class="team">
   <div class="container">
     <ul class="team__info">
@@ -625,7 +590,39 @@
 
     
     
-    
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal__btn" type="button" data-modal-close>
+        <svg class="modal__icon" width="24" height="24">
+          <use href="/Yacht/assets/symbol-defs-6966dcf5.svg#icon-x"></use>
+        </svg>
+      </button>
+      <picture class="modal__picture">
+        <source
+          srcset="/Yacht/assets/cardyacht-tablet@1x-3031fe0c.webp 1x, /Yacht/assets/cardyacht-tablet@2x-d5fe0e9d.webp 2x"
+          media="(min-width: 1246px)"
+          type="image/png"
+        />
+        <source
+          srcset="/Yacht/assets/cardyacht-tablet@1x-3031fe0c.webp 1x, /Yacht/assets/cardyacht-tablet@2x-d5fe0e9d.webp 2x"
+          media="(min-width: 728px)"
+          type="image/png"
+        />
+        <source
+          srcset="/Yacht/assets/cardyacht-mobile@1x-3271fdf1.webp 1x, /Yacht/assets/cardyacht-mobile@2x-d25a1b22.webp 2x"
+          media="(max-width: 727px)"
+          type="image/png"
+        />
+        <img src="/Yacht/assets/cardyacht-aa133386.png" alt="yacht" class="modal__yacht" />
+      </picture>
+      <h3 class="modal__title">Thank you</h3>
+      <p class="modal__text">
+        Thank you for choosing Yacht Adventures, your booking details have been
+        received and our team will be in touch shortly to confirm your reservation
+        and provide any additional information or assistance you may need.
+      </p>
+    </div>
+</div>
 
     
     <script src="../src/js/modal.js"></script>
