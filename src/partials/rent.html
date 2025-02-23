@@ -1,0 +1,120 @@
+<!--Rent-->
+<section class="rent">
+  <div class="container">
+    <div class="title__box">
+      <h2 class="rent__title">Rent a yacht now</h2>
+      <picture>
+        <source
+          srcset="
+            ./img/desktop/yahtmini-desktop@1x.webp 1x,
+            ./img/desktop/yahtmini-desktop@2x.webp 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/tablet/mimiyacht-tablet@1x.webp 1x,
+            ./img/tablet/mimiyacht-tablet@2x.webp 2x
+          "
+          media="(min-width: 728px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/miniyacht-mobile@1x.webp 1x,
+            ./img/mobile/miniyacht-mobile@2x.webp 2x
+          "
+          media="(max-width: 727px)"
+        />
+        <img src="./img/yahtmini.png" alt="yacht" class="rent__img" />
+      </picture>
+    </div>
+    <form class="form" name="contact-form">
+      <div class="rent__field">
+          <input
+            class="rent__input"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Full Name"
+            title="The name must contain at least three Latin letters"
+            required
+          />
+      </div>
+      <div class="rent__field">
+          <input
+            class="rent__input"
+            type="email"
+            name="user-email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+      </div>
+      <div class="rent__field">
+          <input
+            class="rent__input"
+            type="tel"
+            name="user-tel"
+            id="tel"
+            placeholder="Phone number"
+            pattern="\+?[0-9\s\-\(\)]{7,}"
+            required
+          />
+      </div>
+      <div class="rent__comment">
+          <textarea
+            class="rent__textarea"
+            name="user-comment"
+            id="comment"
+            placeholder="Comment"
+          ></textarea>
+      </div>
+      <button class="rent__button" data-modal-open>
+        Send<svg class="rent__button-icon"><use href=""></use></svg>
+      </button>
+    </form>
+  </div>
+</section>
+<!--Modal-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" type="button" data-modal-close>
+      <svg class="modal__icon" width="24" height="24">
+        <use href="./img/symbol-defs.svg#icon-x"></use>
+      </svg>
+    </button>
+    <picture class="modal__picture">
+      <source
+        srcset="
+          ./img/desktop/cardyacht-desktop@1x.webp 1x,
+          ./img/desktop/cardyacht-desktop@2x.webp 2x
+        "
+        media="(min-width: 1246px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./img/tablet/cardyacht-tablet@1x.webp 1x,
+          ./img/tablet/cardyacht-tablet@2x.webp 2x
+        "
+        media="(min-width: 728px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./img/mobile/cardyacht-mobile@1x.webp 1x,
+          ./img/mobile/cardyacht-mobile@2x.webp 2x
+        "
+        media="(max-width: 727px)"
+        type="image/png"
+      />
+      <img src="./img/cardyacht.png" alt="yacht" class="modal__yacht" />
+    </picture>
+    <h3 class="modal__title">Thank you</h3>
+    <p class="modal__text">
+      Thank you for choosing Yacht Adventures, your booking details have been
+      received and our team will be in touch shortly to confirm your reservation
+      and provide any additional information or assistance you may need.
+    </p>
+  </div>
+</div>
