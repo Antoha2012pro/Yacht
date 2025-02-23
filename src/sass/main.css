@@ -446,6 +446,329 @@ body {
   color: #F6F5EF;
 }
 
+.rent {
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 728px) {
+  .rent {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .rent {
+    padding-bottom: 164px;
+  }
+}
+.rent .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 728px) {
+  .rent .container {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .rent .container {
+    justify-content: center;
+    gap: 188px;
+  }
+}
+.rent .title__box {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 728px) {
+  .rent .title__box {
+    margin-bottom: 0;
+  }
+}
+.rent__title {
+  color: #F6F5EF;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 728px) {
+  .rent__title {
+    font-size: 60px;
+    width: 287px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .rent__title {
+    margin-bottom: 64px;
+  }
+}
+.rent__img {
+  width: 259px;
+}
+@media screen and (min-width: 728px) {
+  .rent__img {
+    width: 271px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .rent__img {
+    width: 282px;
+  }
+}
+.rent .form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px;
+}
+@media screen and (min-width: 728px) {
+  .rent .form {
+    gap: 28px;
+    padding: 5px 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 728px) {
+  .rent .form {
+    gap: 28px;
+    padding: 9px 0px 0px 0px;
+  }
+}
+.rent__input {
+  width: 100%;
+  color: #F6F5EF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.72px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #F6F5EF;
+  outline: none;
+  transition: 250ms;
+  padding: 0px 0px 16px 0px;
+}
+@media screen and (min-width: 728px) {
+  .rent__input {
+    width: 364px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .rent__input {
+    width: 443px;
+  }
+}
+.rent__input:focus, .rent__input:hover {
+  border-bottom: 2px solid #F6F5EF;
+}
+.rent__comment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 24px;
+  color: #F6F5EF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.63px;
+}
+@media screen and (min-width: 728px) {
+  .rent__comment {
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: -0.72px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .rent__comment {
+    margin-bottom: 53px;
+  }
+}
+.rent__textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #F6F5EF;
+  background-color: transparent;
+  color: #F6F5EF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.72px;
+  outline: none;
+  transition: 250ms;
+}
+@media screen and (min-width: 728px) {
+  .rent__textarea {
+    width: 364px;
+    height: 58px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .rent__textarea {
+    width: 443px;
+  }
+}
+.rent__textarea:focus, .rent__textarea:hover {
+  border-bottom: 2px solid #F6F5EF;
+}
+.rent__button {
+  margin: 0px auto auto 0px;
+  border: 1px solid #F6F5EF;
+  border-radius: 60px;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #F6F5EF;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 250ms;
+}
+@media screen and (min-width: 728px) {
+  .rent__button {
+    width: 132px;
+    height: 48px;
+    font-size: 18px;
+  }
+}
+.rent__button:hover {
+  border: 1px solid #93ABAE;
+  color: #93ABAE;
+}
+.rent__button-icon {
+  width: 18px;
+  height: 8.66px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 335px;
+  padding: 40px 24px;
+  border-radius: 20px;
+  background-color: #1F212D;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 362px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 728px) {
+  .modal {
+    width: 570px;
+    height: 522px;
+    border-radius: 40px;
+    padding: 97px 64px 64px 64px;
+  }
+}
+.modal__picture {
+  position: relative;
+}
+.modal__picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 142px;
+  height: 142px;
+  transform: rotate(-45.074deg);
+  background: #93ABAE;
+  opacity: 0.6;
+  filter: blur(100px);
+  z-index: -1;
+}
+@media screen and (min-width: 728px) {
+  .modal__picture::after {
+    width: 265px;
+    height: 265px;
+    border-radius: 265px;
+  }
+}
+.modal__yacht {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 728px) {
+  .modal__yacht {
+    width: 338px;
+  }
+}
+.modal__title {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: #F6F5EF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+}
+@media screen and (min-width: 728px) {
+  .modal__title {
+    font-size: 32px;
+    letter-spacing: -1.44px;
+    margin-top: 21px;
+  }
+}
+.modal__text {
+  color: #F6F5EF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
+}
+@media screen and (min-width: 728px) {
+  .modal__text {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+}
+.modal__btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal__btn:hover > .modal__icon, .modal__btn:focus > .modal__icon {
+  transform: scale(1.25);
+}
+@media screen and (min-width: 728px) {
+  .modal__btn {
+    top: 32px;
+    right: 32px;
+  }
+}
+.modal .modal__icon {
+  stroke: #F6F5EF;
+}
+
 .team {
   padding-top: 80px;
   padding-bottom: 43px;
