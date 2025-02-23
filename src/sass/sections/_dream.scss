@@ -21,7 +21,7 @@
             left: 0px;
             width: 255px;
             height: 255px;
-            background-color: #91AFBA;
+            background-color: $accent-color;
             opacity: 0.6;
             filter: blur(100px);
             z-index: -3;
@@ -32,7 +32,7 @@
                 width: 399px;
                 height: 399px;
                 border-radius: 399px;
-                background: #91AFBA;
+                background: $accent-color;
             }
 
             @media screen and (min-width: 1246px) {
@@ -41,7 +41,7 @@
                 width: 414px;
                 height: 414px;
                 border-radius: 414px;
-                background: #91AFBA;
+                background: $accent-color;
             }
         }
 
@@ -159,6 +159,7 @@
             width: 641px;
             gap: 64px;
         }
+
 
         @media screen and (min-width: 1246px) {
             width: 882px;
