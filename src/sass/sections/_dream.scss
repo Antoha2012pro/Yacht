@@ -25,6 +25,10 @@
             opacity: 0.6;
             filter: blur(100px);
             z-index: -3;
+
+            @media screen and (max-width: 361px) {
+                width: 100%;
+            }
     
             @media screen and (min-width: 728px) {
                 top: 950px;
@@ -56,6 +60,10 @@
             opacity: 0.3;
             filter: blur(100px);
             z-index: -3;
+            
+            @media screen and (max-width: 361px) {
+                width: 100%;
+            }
     
             @media screen and (min-width: 728px) {
                 top: 900px;
@@ -188,7 +196,8 @@
 
     &__btn {
         margin: 0px auto auto 0px;
-        border: 1px solid $logo-color;
+        border: none;
+        outline: 1px solid $logo-color;
         color: $logo-color;
         border-radius: 60px;
         padding: 14px 28px;
@@ -202,8 +211,9 @@
         transition: 250ms ease-in-out;
 
         &:hover, &:focus {
-            color: $black-color;
-            background-color: $logo-color;
+            background: transparent;
+            color: $accent-color;
+            outline: 1px solid $italic-color;
         }
 
         @media screen and (min-width: 728px) {

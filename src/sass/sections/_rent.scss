@@ -13,6 +13,37 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
+        z-index: 5;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 283px;
+            height: 283px;
+            border-radius: 283px;
+            opacity: 0.6;
+            background: $accent-color;
+            filter: blur(150px);
+            z-index: -3;
+            
+            @media screen and (max-width: 361px) {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 728px) {
+                width: 413px;
+                height: 100%;
+                border-radius: 413px; 
+            }
+
+            @media screen and (min-width: 1246px) {
+                width: 414px;
+                border-radius: 414px;
+            }
+        }
 
         @media screen and (min-width: 728px) {
             flex-direction: row;
@@ -166,6 +197,7 @@
         align-items: center;
         gap: 16px;
         margin: 0px auto auto 0px;
+        outline: none;
         border: 1px solid $logo-color;
         border-radius: 60px;
         padding: 14px 28px;
@@ -175,7 +207,6 @@
         letter-spacing: -0.04em;
         color: $logo-color;
         background-color: transparent;
-        cursor: pointer;
         transition: 250ms;
 
         @media screen and (min-width: 728px) {
@@ -184,7 +215,7 @@
             font-size: 18px;
         }
 
-        &:hover {
+        &:hover, &:focus {
             border: 1px solid $accent-color;
             color: $accent-color;
 

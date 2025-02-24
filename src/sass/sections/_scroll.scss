@@ -1,0 +1,36 @@
+.scroll {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 100;
+    background-color: transparent;
+    opacity: 0.7;
+
+    #scrollToTopBtn {
+        opacity: 0;
+        visibility: hidden;
+        transition: 250ms;
+    }
+
+    #scrollToTopBtn:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:focus {
+        outline: none;
+
+        .scroll__svg {
+            border: none;
+            border-radius: 10px;
+            outline: 3px solid $logo-color;
+        }
+    }
+
+    &__svg {
+        width: 68px;
+        height: 68px;
+    }
+
+}
+
