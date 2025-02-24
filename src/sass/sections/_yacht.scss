@@ -16,6 +16,10 @@
         scroll-behavior: smooth;
         scrollbar-color: $bcg-color $black-color; 
         gap: 16px;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__item {

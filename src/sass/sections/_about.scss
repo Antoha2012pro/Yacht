@@ -104,7 +104,7 @@
         position: absolute;
         bottom: 24px;
         left: 24px;
-        transition: 250ms ease-out;
+        transition: 250ms;
 
         @media screen and (min-width: 728px) {
             
@@ -127,6 +127,7 @@
         }
 
         &:hover, &:focus {
+            outline: none;
             background-color: $bcg-color;
             color: $logo-color;
         }
