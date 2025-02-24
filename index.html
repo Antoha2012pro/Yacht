@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/Yacht/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yacht/assets/index-23cf24ba.css">
+    <link rel="stylesheet" href="/Yacht/assets/index-1612b16f.css">
   </head>
   <body>
     <header class="header">
@@ -518,7 +518,7 @@
             placeholder="Comment"
           ></textarea>
       </div>
-      <button class="rent__button" data-modal-open>
+      <button type="submit" class="rent__button" data-modal-open>
         Send<svg class="rent__button-icon"><use href="/Yacht/assets/symbol-defs-6966dcf5.svg#icon-arrow-left"></use></svg>
       </button>
     </form>
@@ -589,8 +589,14 @@
 </section>
 
     
+    <button id="scrollToTopBtn" onclick="scrollToTop()" class="scroll">
+    <svg class="scroll__svg">
+        <use href="/Yacht/assets/symbol-defs-6966dcf5.svg#icon-arrow-up"></use>
+    </svg>
+</button>
     
-    <div class="backdrop is-hidden" data-modal>
+    <section class="thank">
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__btn" type="button" data-modal-close>
         <svg class="modal__icon" width="24" height="24">
@@ -623,8 +629,11 @@
       </p>
     </div>
 </div>
+</section>
+    
 
     
-    <script src="../src/js/modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>
