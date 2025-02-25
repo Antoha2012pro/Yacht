@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=/Yacht/",
+    "build": "vite build --base=/yacht/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
     "vite": "^4.0.5"
   },
-  "author": " ",
+  "author": "<@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "body": "^5.1.0",
