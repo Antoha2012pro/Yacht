@@ -1,0 +1,102 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 10;
+    padding: 24px 0px 0px 0px;
+    transform: scale(1);
+    transition: 250ms;
+    background-color: $black-color;
+
+    @media screen and (max-width: 362px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 728px) {
+    }
+
+    .backdrop-header.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(1.2);
+        transition: 250ms;
+    }
+
+    .container {
+        height: 100%;
+        background-color: $black-color;
+    }
+
+    &__logos {
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -24px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0px auto;
+            width: 100%;
+            border-bottom: 1px solid rgba(246, 245, 239, 0.20);
+      
+            @media screen and (min-width: 728px) {
+              width: 100%;
+            }
+          }
+    }
+
+    &__close {
+        background-color: transparent;
+        width: 24px;
+        height: 24px;
+        transform: scale(1);
+        transition: 250ms;
+
+        &:hover, &:focus {
+            background-color: transparent;
+            transform: scale(1.2);
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__nav {
+        padding: 25% 0 25% 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        color: $logo-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 118%;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        transition: 250ms;
+
+        &:hover, &:focus {
+            color: $accent-color;
+        }
+    }
+}
