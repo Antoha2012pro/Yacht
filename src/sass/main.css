@@ -335,6 +335,83 @@ body {
   }
 }
 
+.adventure {
+  padding-top: 164px;
+  padding-bottom: 64px;
+}
+.adventure .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 1246px) {
+  .adventure .container {
+    display: flex;
+    gap: 32px;
+  }
+}
+.adventure__yacht {
+  background: var(--linear-green, linear-gradient(92deg, #BEC7C2 41.03%, #A1B5BA 90.31%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "DM Sans";
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
+  /* 38.4px */
+  letter-spacing: -1.44px;
+  gap: 20px;
+}
+.adventure__box {
+  display: flex;
+  gap: 14px;
+}
+@media screen and (max-width: 200px) {
+  .adventure__box {
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 728px) {
+  .adventure__box {
+    gap: 32px;
+    margin-left: auto;
+  }
+}
+.adventure__title {
+  color: #F6F5EF;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.44px;
+  width: 100%;
+}
+@media screen and (min-width: 728px) {
+  .adventure__title {
+    width: 514px;
+  }
+}
+.adventure__text {
+  color: #F6F5EF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  /* 22.4px */
+  letter-spacing: -0.28px;
+  width: 100%;
+}
+@media screen and (min-width: 728px) {
+  .adventure__text {
+    width: 185px;
+  }
+}
+@media screen and (min-width: 1246px) {
+  .adventure__text {
+    line-height: 1.4;
+  }
+}
+
 .about {
   padding-top: 80px;
   padding-bottom: 80px;
