@@ -1532,6 +1532,10 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.footer__logo-img {
+  width: 18px;
+  height: 18px;
   color: #F6F5EF;
   font-size: 14px;
   font-weight: 700;
@@ -1539,10 +1543,6 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   transition: 250ms;
-}
-.footer__logo-img {
-  width: 18px;
-  height: 18px;
 }
 @media screen and (min-width: 728px) {
   .footer__logo-img {
