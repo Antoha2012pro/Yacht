@@ -80,19 +80,19 @@
             width: 18px;
             height: 18px;
 
+            color: $logo-color;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            transition: 250ms;
+
             @media screen and (min-width: 728px) {
                 width: 23px;
                 height: 23px;
             }
         }
-
-        color: $logo-color;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.14;
-        letter-spacing: 0.42px;
-        text-transform: uppercase;
-        transition: 250ms;
 
         &:hover,
         &:focus {
