@@ -1,16 +1,4 @@
 .team {
-    padding-top: 80px;
-    padding-bottom: 43px;
-
-    @media screen and (min-width: 728px) {
-        padding-top: 100px;
-        padding-bottom: 45px;
-    }
-
-    @media screen and (min-width: 1246px) {
-        padding-top: 164px;
-        padding-bottom: 64px;
-    }
 
     .container {
         display: flex;

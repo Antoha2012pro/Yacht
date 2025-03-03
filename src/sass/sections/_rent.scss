@@ -97,7 +97,7 @@
         }
     }
 
-    .form {
+    &__form {
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -114,15 +114,13 @@
         }
     }
 
-    //&__field {}//
-
     &__input {
         width: 100%;
         color: #F6F5EF;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 120%;
-        letter-spacing: -0.72px;
+        letter-spacing: -0.63px;
         background-color: transparent;
         border: none;
         border-bottom: 1px solid $logo-color;
@@ -132,6 +130,8 @@
 
         @media screen and (min-width: 728px) {
             width: 364px;
+            font-size: 16px;
+            letter-spacing: -0.72px;
         }
 
         @media screen and (min-width: 1246px) {
@@ -144,18 +144,9 @@
     }
 
     &__comment {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 24px;
-        color: #F6F5EF;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 120%;
-        letter-spacing: -0.63px;
 
         @media screen and (min-width: 728px) {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             font-size: 16px;
             letter-spacing: -0.72px;
         }
@@ -166,25 +157,26 @@
     }
 
     &__textarea {
+        padding: 0px 0px 35px 0px;
         width: 100%;
         border: none;
         border-bottom: 1px solid $logo-color;
         background-color: transparent;
         color: $logo-color;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 1.2;
-        letter-spacing: -0.72px;
+        letter-spacing: -0.63px;
         outline: none;
         transition: 250ms;
+        overflow: hidden;
 
         @media screen and (min-width: 728px) {
-            width: 364px;
-            height: 58px;
+            font-size: 16px;
+            letter-spacing: -0.72px;
         }
 
         @media screen and (min-width: 1246px) {
-            width: 443px;
         }
 
         &:focus, &:hover {
@@ -213,6 +205,7 @@
             width: 132px;
             height: 48px;
             font-size: 18px;
+            margin: auto 0px 0px 0px;
         }
 
         &:hover, &:focus {

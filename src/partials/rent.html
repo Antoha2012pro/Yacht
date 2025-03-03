@@ -28,8 +28,7 @@
         <img src="./img/yahtmini.png" alt="yacht" class="rent__img" />
       </picture>
     </div>
-    <form class="form" name="contact-form">
-      <div class="rent__field">
+    <form class="rent__form" name="contact-form">
           <input
             class="rent__input"
             type="text"
@@ -39,8 +38,6 @@
             title="The name must contain at least three Latin letters"
             required
           />
-      </div>
-      <div class="rent__field">
           <input
             class="rent__input"
             type="email"
@@ -49,8 +46,6 @@
             placeholder="Email"
             required
           />
-      </div>
-      <div class="rent__field">
           <input
             class="rent__input"
             type="tel"
@@ -60,15 +55,12 @@
             pattern="\+?[0-9\s\-\(\)]{7,}"
             required
           />
-      </div>
-      <div class="rent__comment">
           <textarea
             class="rent__textarea"
             name="user-comment"
             id="comment"
             placeholder="Comment"
           ></textarea>
-      </div>
       <button type="submit" class="rent__button" data-modal-open>
         Send<svg class="rent__button-icon"><use href="./img/symbol-defs.svg#icon-arrow-left"></use></svg>
       </button>
