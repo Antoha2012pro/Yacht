@@ -23,17 +23,17 @@
       transition: 250ms;
 
       @media screen and (max-width: 335px) {
-          width: 100%;
+        width: 100%;
       }
 
       @media screen and (min-width: 728px) {
-          width: 704px;
+        width: 704px;
       }
 
       @media screen and (min-width: 1246px) {
-          width: 1216px;
+        width: 1216px;
       }
-  }
+    }
 
     @media screen and (min-width: 728px) {
       padding: 0px 15px 32px 15px;
@@ -54,19 +54,23 @@
     color: $logo-color;
     font-size: 14px;
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.2;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     transition: 250ms;
+    outline: none;
 
     &:hover,
     &:focus {
       color: $accent-color;
+      .header__icon {
+          transform: scale(1.1);
+      }
     }
 
     @media screen and (min-width: 728px) {
       font-size: 18px;
-      line-height: 1.18;
+      line-height: 1.2;
       letter-spacing: 0.54px;
     }
   }
@@ -74,6 +78,7 @@
   &__icon {
     width: 18px;
     height: 18px;
+    transition: 250ms;
 
     @media screen and (min-width: 728px) {
       width: 23px;
@@ -110,6 +115,7 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     transition: 250ms;
+    outline: none;
 
     &:hover,
     &:focus {

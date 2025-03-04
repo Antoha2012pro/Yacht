@@ -26,7 +26,7 @@
             border-radius: 283px;
             opacity: 0.6;
             background: $accent-color;
-            filter: blur(150px);
+            filter: blur(130px);
             z-index: -3;
             
             @media screen and (max-width: 361px) {
@@ -70,7 +70,7 @@
         color: #F6F5EF;
         font-size: 36px;
         font-weight: 500;
-        line-height: 110%;
+        line-height: 1.2;
         letter-spacing: -1.62px;
         margin-bottom: 16px;
 
@@ -119,7 +119,7 @@
         color: #F6F5EF;
         font-size: 14px;
         font-weight: 500;
-        line-height: 120%;
+        line-height: 1.2;
         letter-spacing: -0.63px;
         background-color: transparent;
         border: none;

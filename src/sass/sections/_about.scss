@@ -12,6 +12,40 @@
         padding-bottom: 164px;
     }
 
+    .container {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 230px;
+            left: 0px;
+            width: 180px;
+            height: 323px;
+            border-radius: 323px;
+            opacity: 0.6;
+            background: $accent-color;
+            filter: blur(100px);
+            z-index: -3;
+            
+            @media screen and (max-width: 180px) {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 728px) {
+                top: 540px;
+                width: 414px;
+                height: 414px;
+                border-radius: 414px;
+                filter: blur(130px);
+            }
+
+            @media screen and (min-width: 1246px) {
+                top: 200px;
+            }
+        }
+    }
+
     &__list {
         display: flex;
         flex-direction: column;
