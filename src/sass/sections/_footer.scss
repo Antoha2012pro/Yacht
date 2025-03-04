@@ -78,14 +78,16 @@
         color: $logo-color;
         font-size: 14px;
         font-weight: 700;
-        line-height: 1.14;
+        line-height: 1.2;
         letter-spacing: 0.42px;
         text-transform: uppercase;
         transition: 250ms;
+        outline: none;
 
         &-img {
             width: 18px;
             height: 18px;
+            transition: 250ms;
 
             @media screen and (min-width: 728px) {
                 width: 23px;
@@ -96,12 +98,15 @@
         &:hover,
         &:focus {
             color: $accent-color;
+            .footer__logo-img {
+                transform: scale(1.1);
+            }
         }
 
         @media screen and (min-width: 728px) {
             height: 23px;
             font-size: 18px;
-            line-height: 1.18;
+            line-height: 1.2;
             letter-spacing: 0.54px;
         }
     }
@@ -127,6 +132,13 @@
         line-height: 1.1;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        transition: 250ms;
+        outline: none;
+
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
     }
 
     &__box {
@@ -148,6 +160,29 @@
 
             @media screen and (min-width: 728px) {
                 gap: 16px;
+            }
+        }
+
+        &-link {
+            display: block;
+            transition: 250ms;
+            width: 32px;
+            height: 32px;
+            border: none;
+            outline: none;
+            width: 32px;
+            height: 32px;
+            transform: scale(1);
+            transition: 250ms;
+            
+            &:hover,
+            &:focus {
+                transform: scale(1.1);
+            }
+
+            @media screen and (min-width: 728px) {
+                width: 40px;
+                height: 40px;
             }
         }
 

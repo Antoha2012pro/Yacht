@@ -1,35 +1,62 @@
 .scroll {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    z-index: 100;
-    background-color: transparent;
-    opacity: 0.7;
+    padding: 43px 0px 0px 0px;
 
-    #scrollToTopBtn {
-        opacity: 0;
-        visibility: hidden;
-        transition: 250ms;
+    @media screen and (min-width: 728px) {
+        padding: 45px 0px 0px 0px;
     }
 
-    #scrollToTopBtn:hover {
-        opacity: 1;
-        visibility: visible;
+    @media screen and (min-width: 1246px) {
+        padding: 64px 0px 0px 0px;
     }
 
-    &:focus {
-        outline: none;
+    &__btn {
+        width: 44px;
+        height: 44px;
+        margin: 0px 0px 0px auto;
+        opacity: 0.7;
+        background-color: transparent;
+        display: block;
+        
+        &:focus {
+            outline: none;
+        }
 
-        .scroll__svg {
-            border: none;
-            border-radius: 10px;
-            outline: 3px solid $logo-color;
+        @media screen and (min-width: 728px) {
+            width: 68px;
+            height: 68px;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 44px;
+        height: 44px;
+        
+        &:focus {
+            outline: none;
+    
+            .scroll__svg {
+                border: none;
+                border-radius: 10px;
+                outline: 3px solid $logo-color;
+            }
+        }
+
+        @media screen and (min-width: 728px) {
+            width: 68px;
+            height: 68px;
         }
     }
 
     &__svg {
-        width: 68px;
-        height: 68px;
+        display: block;
+        width: 44px;
+        height: 44px;
+
+        @media screen and (min-width: 728px) {
+            width: 68px;
+            height: 68px;
+        }
     }
 
 }

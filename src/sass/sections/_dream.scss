@@ -179,7 +179,7 @@
         color: $logo-color;
         font-size: 36px;
         font-weight: 500;
-        line-height: 110%;
+        line-height: 1.1;
         letter-spacing: -1.62px;
 
         
@@ -206,9 +206,9 @@
         cursor: pointer;
         font-size: 14px;
         font-weight: 700;
-        line-height: 110%;
+        line-height: 1.1;
         letter-spacing: -0.63px;
-        transition: 250ms ease-in-out;
+        transition: 250ms;
 
         &:hover, &:focus {
             background: transparent;
@@ -222,87 +222,4 @@
         }
 
     }
-
-    // &__gradient-right {
-    //     position: absolute;
-    //     top: 0px;
-    //     left: -100px;
-    //     width: 255px;
-    //     height: 255px;
-    //     transform: rotate(-44.916deg);
-    //     background-color: #91AFBA;
-    //     opacity: 0.6;
-    //     filter: blur(100px);
-    //     z-index: -3;
-
-    //     @media screen and (min-width: 728px) {
-    //         top: -50px;
-    //         left: 0;
-    //         width: 399px;
-    //         height: 399px;
-    //         transform: rotate(-44.094deg);
-    //         border-radius: 399px;
-    //         opacity: 0.6;
-    //         background: #91AFBA;
-    //         filter: blur(100px);
-    //     }
-    // }
-
-    // &__gradient-left {
-    //     position: absolute;
-    //     top: 0px;
-    //     right: -50px;
-    //     width: 195px;
-    //     height: 195px;
-    //     transform: rotate(-44.916deg);
-    //     background: #A6A9B2;
-    //     opacity: 0.3;
-    //     filter: blur(100px);
-    //     z-index: -3;
-
-    //     @media screen and (min-width: 728px) {
-    //         top: -30px;
-    //         right: -40px;
-    //         width: 304px;
-    //         height: 304px;
-    //         transform: rotate(-44.094deg);
-    //         border-radius: 304px;
-    //         background: #A6A9B2;
-    //     }
-        
-    //     @media screen and (min-width: 1246px) {
-    //         right: 60px;
-    //     }
-    // }
-
-    // gpt
-
-    // .dream__gradient-left {
-    //     position: absolute;
-    //     top: 50%;
-    //     right: -100px; /* Виходить за межі */
-    //     width: 195px;
-    //     height: 195px;
-    //     transform: translateY(-50%) rotate(-44.916deg);
-    //     background: #A6A9B2;
-    //     opacity: 0.3;
-    //     filter: blur(100px);
-    //     z-index: -3; /* Позаду всього */
-    //     pointer-events: none; /* Вимикаємо взаємодію */
-    // }
-    
-    // .dream__gradient-right {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: -100px; /* Виходить за межі */
-    //     width: 255px;
-    //     height: 255px;
-    //     transform: translateY(-50%) rotate(-44.916deg);
-    //     background: #91AFBA;
-    //     opacity: 0.6;
-    //     filter: blur(100px);
-    //     z-index: -3;
-    //     pointer-events: none;
-    // }
-    
 }

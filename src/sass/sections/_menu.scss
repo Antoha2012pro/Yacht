@@ -6,7 +6,6 @@
     height: 100%;
     opacity: 1;
     z-index: 10;
-    padding: 24px 0px 0px 0px;
     transform: scale(1);
     transition: 250ms;
     background-color: $black-color;
@@ -25,9 +24,43 @@
         transition: 250ms;
     }
 
+    .no-scroll {
+        overflow: hidden;
+    }
+
     .container {
+        position: relative;
+        padding: 24px 15px 0px 15px;
+        width: 100%;
         height: 100%;
         background-color: $black-color;
+        margin: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 40px;
+            left: -140px;
+            width: 279px;
+            height: 279px;
+            border-radius: 279px;
+            opacity: 0.6;
+            background: $accent-color;
+            filter: blur(100px);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            right: -20px;
+            width: 279px;
+            height: 279px;
+            border-radius: 279px;
+            opacity: 0.6;
+            background: $accent-color;
+            filter: blur(100px);
+        }
     }
 
     &__logos {
@@ -36,6 +69,7 @@
         align-items: center;
         justify-content: space-between;
         position: relative;
+        margin: 0px 0px 24px 0px;
 
         &::after {
             content: "";
@@ -64,6 +98,9 @@
         &:hover, &:focus {
             background-color: transparent;
             transform: scale(1.2);
+            .backdrop__close-icon {
+                fill: $accent-color;
+            }
         }
 
         &-icon {
@@ -73,7 +110,7 @@
     }
 
     &__nav {
-        padding: 25% 0 25% 0;
+        padding: 30% 0 30% 0;
     }
 
     &__list {
