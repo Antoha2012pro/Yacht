@@ -10,14 +10,16 @@
     }
 
     &__btn {
+        outline: none;
         width: 44px;
         height: 44px;
         margin: 0px 0px 0px auto;
         opacity: 0.7;
         background-color: transparent;
         display: block;
+        transition: 250ms;
         
-        &:focus {
+        &:hover, &:focus {
             outline: none;
         }
 
@@ -28,17 +30,16 @@
     }
 
     &__link {
+        outline: none;
         display: block;
         width: 44px;
         height: 44px;
+        transition: 250ms;
         
-        &:focus {
+        &:hover, &:focus {
             outline: none;
-    
             .scroll__svg {
-                border: none;
-                border-radius: 10px;
-                outline: 3px solid $logo-color;
+                transform: scale(1.1);
             }
         }
 
@@ -52,6 +53,9 @@
         display: block;
         width: 44px;
         height: 44px;
+        border: none;
+        outline: none;
+        transition: 250ms;
 
         @media screen and (min-width: 728px) {
             width: 68px;

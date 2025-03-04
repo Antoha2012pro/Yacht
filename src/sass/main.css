@@ -1677,6 +1677,7 @@ body {
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.36px;
+  z-index: -4;
 }
 @media screen and (max-width: 300px) {
   .footer__copywright {
@@ -1704,14 +1705,16 @@ body {
   }
 }
 .scroll__btn {
+  outline: none;
   width: 44px;
   height: 44px;
   margin: 0px 0px 0px auto;
   opacity: 0.7;
   background-color: transparent;
   display: block;
+  transition: 250ms;
 }
-.scroll__btn:focus {
+.scroll__btn:hover, .scroll__btn:focus {
   outline: none;
 }
 @media screen and (min-width: 728px) {
@@ -1721,17 +1724,17 @@ body {
   }
 }
 .scroll__link {
+  outline: none;
   display: block;
   width: 44px;
   height: 44px;
+  transition: 250ms;
 }
-.scroll__link:focus {
+.scroll__link:hover, .scroll__link:focus {
   outline: none;
 }
-.scroll__link:focus .scroll__svg {
-  border: none;
-  border-radius: 10px;
-  outline: 3px solid #F6F5EF;
+.scroll__link:hover .scroll__svg, .scroll__link:focus .scroll__svg {
+  transform: scale(1.1);
 }
 @media screen and (min-width: 728px) {
   .scroll__link {
@@ -1743,6 +1746,9 @@ body {
   display: block;
   width: 44px;
   height: 44px;
+  border: none;
+  outline: none;
+  transition: 250ms;
 }
 @media screen and (min-width: 728px) {
   .scroll__svg {
@@ -1864,7 +1870,7 @@ body {
   color: #F6F5EF;
   font-size: 14px;
   font-weight: 700;
-  line-height: 118%;
+  line-height: 1.2;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   transition: 250ms;
@@ -1955,7 +1961,7 @@ body {
   color: #F6F5EF;
   font-size: 24px;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -1.08px;
 }
 @media screen and (min-width: 728px) {
@@ -1969,7 +1975,7 @@ body {
   color: #F6F5EF;
   font-size: 14px;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: -0.28px;
 }
 @media screen and (min-width: 728px) {
